@@ -1,0 +1,9 @@
+strcpy <=> copiarCadena
+
+strcat <=> concatenarCadena
+
+strlen <=> longitud
+
+strcmp <=> compararCadenas
+
+atoi <=> cadenaAEntero
