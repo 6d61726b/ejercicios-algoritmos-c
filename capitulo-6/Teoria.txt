@@ -1,0 +1,11 @@
+/* Teoria sobre Punteros, arrays y aritmética de direcciones */
+
+Crear arrays estaticos
+
+Crear arrays dinamicamente ( funciones malloc y sizeof )
+
+char* sArr;
+
+int n;
+
+sArr = (char*) malloc(n);
