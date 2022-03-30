@@ -1,0 +1,14 @@
+aviso: Esto viene despues del problema 7.2
+
+Operaciones sobre arrays
+Las operaciones sobre arrays son algoritmos que nos permiten buscar, agregar, insertar y eliminar elementos. Analizaremos las siguientes operaciones:
+
+* agregar - Permite agregar un elemento al final del array.
+* buscar - Permite determinar si un array contiene un determinado elemento.
+* insertar - Permite insertar un elemento en una determinada posición determinada.
+* eliminar - Permite eliminar el elemento ubicado en una posición determinada.
+* insertarEnOrden - Inserta un elemnto respetando un criterio de ordenamiento.
+* buscarEInsertarEnOrden - Permite buscar un elemento y en caso de no encontrarlo entonces insertarlo respetando un criterio de ordenamiento.
+
+Para simplificar y facilitar la lectura y la compresión de los algoritmos trabajaremos con arrays de enteros (int[]), pero luego extenderemos estos conceptos para poder trabajar con arrays que contengan datos de cualquier otro tipo.
+
