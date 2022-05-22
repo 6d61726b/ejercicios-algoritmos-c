@@ -1,25 +1,32 @@
 // Problema 7.3
 // Dado un conjunto de números enteros determinar cuántas veces se repite cada uno.
-// Los datos se ingresan sin ningún orden y finalizan al llegar el valor 0. Se garantiza que a
-// lo sumo habrá 100 números diferentes.
+// Los datos se ingresan sin ningún orden y finalizan al llegar el valor 0. Se garantiza que a lo sumo habrá 100 números diferentes.
 
 #include <stdio.h>
 #include "arrays.h"
 
 int main()
 {
-	int arr[100];
-	int v;
-	int aNum[];
-	int aCont[];
+	int aNum[100], aCont[100];
+	int len = 0;
 
-	for(int i=0;i<100;i++) // Pedimos los datos
+	inicializarContadores(aCont);
+	
+	int v;
+	printf("Ingrese un valor: ");
+	scanf("%d", &v);
+
+	int enc, pos;
+
+	while (v != 0) 
 	{
-		scanf("%i",&v);
-		v!=0?arr[i]=v:break;
+		pos = buscarYAgregar(aNum, &len, v, &enc);
+		aCont[pos] = aCont[pos] + 1;
+
+		printf("Ingrese un valor: ");
+		scanf("%d", &v);
 	}
 
-
-
+	mostrarResultados(aNum, len, aCont);
 	return 0;
 }
