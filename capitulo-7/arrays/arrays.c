@@ -53,3 +53,47 @@ int buscarEnOrden(int a[], int len, int v, int* enc)
 	*enc = i < len;
 	return i;
 }
+
+int buscarEInsertarEnOrden(int a[], int* len, int v, int* enc)
+{
+	int pos = buscarEnOrden(a, *len, v, enc);
+	return !*enc ? insertarEnOrden(a, len, v) : pos;
+}
+
+void ordenar(int a[], int len)
+{
+	int ordenado = 0;
+	while (!ordenado) 
+	{
+		ordenado = 1;
+		for (int i = 0; i < len-1; i++)
+		{
+			if (a[i] > a[i+1]) 
+			{
+				int aux = a[i];
+				a[i] = a[i+1];
+				a[i+1] = aux;
+				ordenado = 0;
+			}
+		}
+	}
+}
+
+int busquedaBinaria(int a[], int len, int v, int* enc)
+{
+	int i = 0;
+	int j = len-1;
+	int k = (i+j)/2;
+	int encontrado = 0;
+
+	while (!encontrado && i <= j)
+	{
+		if (a[k] > v) j = k-1;
+		else if (a[k] < v) i = k+1;
+		else encontrado = 1;
+		k = (i+j)/2;
+	}
+
+	*enc = encontrado;
+	return k;
+}
