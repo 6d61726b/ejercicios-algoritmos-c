@@ -18,7 +18,7 @@ En este repositorio voy a subir mi progreso resolviendo los ejercicios del libro
 
 7. [Tipos de datos estructurados](https://github.com/6d61726b/ejercicios-algoritmos-c/tree/main/capitulo-7)
 
-8. Operaciones sobre archivos
+8. [Operaciones sobre archivos](https://github.com/6d61726b/ejercicios-algoritmos-c/tree/main/capitulo-8)
 
 9. Tipo Abstracto de Dato (TAD)
 
