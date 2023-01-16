@@ -15,7 +15,7 @@ Alumno crearAlumno(int matricula, char nombre[], int nota)
 
 void grabarAlumno(Alumno* alumno, FILE* archivo)
 {
-	fwrite(alumno, sizeof(Alumno), 1, archivo)
+	fwrite(alumno, sizeof(Alumno), 1, archivo);
 }
 
 void leerAlumno(Alumno* alumno, FILE* archivo)
