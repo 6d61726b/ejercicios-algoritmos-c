@@ -9,6 +9,6 @@ typedef struct Empleado
 	char nombre[30];
 	char direccion[120];
 	long fechaIngreso;
-} Emp;
+} Empleado;
 
 #endif
