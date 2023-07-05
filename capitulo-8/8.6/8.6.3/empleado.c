@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include "empleado.h"
 
-static long byteARegistros(int numeroDeBytes)
+static long byteARegistro(int numeroDeByte)
 {
-	return numeroDeBytes / sizeof(Empleado);
+	return numeroDeByte / sizeof(Empleado);
 }
 
-static long RegistrosAByte(int numeroDeRegistros)
+static long registroAByte(int numeroDeRegistro)
 {
-	return numeroDeRegistros * sizeof(Empleado);
+	return numeroDeRegistro * sizeof(Empleado);
 }
 
 static void leerEmpleado(FILE *archivo, Empleado *empleado)
