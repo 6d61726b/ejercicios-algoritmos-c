@@ -2,6 +2,17 @@
 #include <stdlib.h>
 #include "empleado.h"
 
+static void insertarIndex(IndexIdEmpleado a[], int *longitud, IndexIdEmpleado v, int posicion)
+{
+	for (int i = *longitud; i > posicion; i--)
+	{
+		a[i] = a[i-1];
+	}
+
+	a[posicion] = v;
+	*longitud = *longitud+1;
+}
+
 static int insertarIndexEnOrden(IndexIdEmpleado a[], int *longitud, IndexIdEmpleado v)
 {
 	int i = 0;
