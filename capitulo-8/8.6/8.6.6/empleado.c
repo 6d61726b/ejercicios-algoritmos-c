@@ -2,6 +2,20 @@
 #include <stdlib.h>
 #include "empleado.h"
 
+static int insertarIndexEnOrden(IndexIdEmpleado a[], int *longitud, IndexIdEmpleado v)
+{
+	int i = 0;
+
+	while (i < *longitud && a[i].idEmpleado <= v.idEmpleado)
+	{
+		i++;
+	}
+
+	insertarIndex(a, longitud, v, i);
+
+	return i;
+}
+
 static long byteARegistro(int numeroDeByte)
 {
 	return numeroDeByte / sizeof(Empleado);
