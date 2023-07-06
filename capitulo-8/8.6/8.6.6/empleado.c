@@ -95,7 +95,7 @@ int indexar(FILE *archivo, IndexIdEmpleado indice[])
 	int longitud = 0;
 	IndexIdEmpleado rIndexIdEmpleado;
 
-	int empleado;
+	Empleado empleado;
 	leerEmpleado(archivo, &empleado);
 
 	while (!feof(archivo))
