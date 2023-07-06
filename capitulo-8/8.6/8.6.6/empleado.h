@@ -22,5 +22,6 @@ typedef struct Empleado
 int subirArchivo(FILE *archivo, Empleado empleados[]);
 void ordenar(Empleado empleados[], int longitud);
 void bajarArchivo(FILE *archivo, Empleado empleados[], int longitud);
+int indexar(FILE *archivo, IndexIdEmpleado indice[]);
 
 #endif
