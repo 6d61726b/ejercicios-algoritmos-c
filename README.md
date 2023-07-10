@@ -20,7 +20,7 @@ En este repositorio voy a subir mi progreso resolviendo los ejercicios del libro
 
 8. [Operaciones sobre archivos](https://github.com/6d61726b/ejercicios-algoritmos-c/tree/main/capitulo-8)
 
-9. Tipo Abstracto de Dato (TAD)
+9. [Tipo Abstracto de Dato (TAD)](https://github.com/6d61726b/ejercicios-algoritmos-c/tree/main/capitulo-9)
 
 10. Análisis de ejercicios integradores
 
