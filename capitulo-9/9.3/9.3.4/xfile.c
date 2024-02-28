@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 #include "xfile.h"
 
 typedef struct XFile
@@ -32,4 +33,12 @@ Xfile xopen(char *nombreArchivo, char *modo, int recSize)
 	// Posiciono el puntero en el primer registro del archivo
 	xseek(&xFile, 0);
 	return xFile;
+}
+
+static char *obtenerNombreBajas(char *nombreArchivo)
+{
+	char *c = (char*) malloc(strlen(nombreArchivo) + 1 + 1);
+	strcpy(c, nombreArchivo);
+	strcat(c, "_");
+	return c;
 }
