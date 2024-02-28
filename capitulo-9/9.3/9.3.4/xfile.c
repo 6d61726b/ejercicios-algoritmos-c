@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "xfile.h"
@@ -41,4 +42,19 @@ static char *obtenerNombreBajas(char *nombreArchivo)
 	strcpy(c, nombreArchivo);
 	strcat(c, "_");
 	return c;
+}
+
+static int subirBajas(FILE *archivo, int a[])
+{
+	int r;
+	int len = 0;
+
+	fread(&r, sizeof(int), 1, archivo);
+	while (!feof(archivo))
+	{
+		a[len++] = r;
+		fread(&r, sizeof(int), 1, archivo);
+	}
+
+	return len;
 }
