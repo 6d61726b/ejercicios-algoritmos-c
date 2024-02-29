@@ -17,7 +17,7 @@ void xwrite(XFile *xFile, void *registro);
 int xeof(XFile *xFile);
 
 // Eliminar un registro
-void xdelete(XFile* xFile, int registro);
+void xdelete(XFile* xFile, int recNo);
 
 // Mover el indicador de posicion del archivo
 void xseek(XFile* xFile, int recNo);
