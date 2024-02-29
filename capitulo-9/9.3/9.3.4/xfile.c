@@ -65,3 +65,13 @@ void xclose(XFile *xFile)
 	fclose(xFile->archivo);
 	free(xFile->bajas);
 }
+
+void xdelete(XFile* xFile, int recNo)
+{
+	// Inserto en el array el numero de registro que se da de baja
+	xFile->bajas[xFile->lenBajas++] = recNo;
+
+	// Grabo este numero al final del archivo de bajas
+	fseek(xFile->archivoBajas, 0, SEEK_END);
+	fwrite(&recNo, sizeof(int), 1, xFile->archivoBajas);
+}
