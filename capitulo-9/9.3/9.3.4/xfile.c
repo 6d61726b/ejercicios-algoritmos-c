@@ -58,3 +58,10 @@ static int subirBajas(FILE *archivo, int a[])
 
 	return len;
 }
+
+void xclose(XFile *xFile)
+{
+	fclose(xFile->archivoBajas);
+	fclose(xFile->archivo);
+	free(xFile->bajas);
+}
